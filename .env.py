@@ -1,0 +1,2 @@
+GEMINI_API_KEY=AIzaSyCcDJEObWQYLIhFrPc6KOqSS_wLK8iLjGQcd backend
+
