@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+/* Khung chat tổng thể */
+.chat-container {
+    width: 450px;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Khung tin nhắn */
+.chat-box {
+    height: 400px;
+    overflow-y: auto;
+    border-radius: 10px;
+    padding: 10px;
+    background: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Tin nhắn người dùng */
+.user-message {
+    align-self: flex-end;
+    background: #4caf50;
+    color: white;
+    padding: 10px;
+    border-radius: 12px;
+    margin: 5px;
+    max-width: 75%;
+}
+
+/* Tin nhắn bot */
+.bot-message {
+    align-self: flex-start;
+    background: #e0e0e0;
+    padding: 10px;
+    border-radius: 12px;
+    margin: 5px;
+    max-width: 75%;
+}
+
+/* Ô nhập tin nhắn và nút gửi */
+.input-container {
+    display: flex;
+    margin-top: 10px;
+    border-radius: 8px;
+    background: white;
+    padding: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Nút gửi tin nhắn */
+button {
+    padding: 12px 15px;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}

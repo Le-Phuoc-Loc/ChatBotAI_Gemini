@@ -7,13 +7,35 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+    <div class="auth-container">
+        <h3 id="status-text">🔴 Chưa đăng nhập</h3>
+        <input type="text" id="username-input" placeholder="Nhập tên đăng nhập">
+        <input type="email" id="email-input" placeholder="Nhập email">
+        <input type="password" id="password-input" placeholder="Nhập mật khẩu">
+        <button id="login-button">🔑 Đăng Nhập</button>
+        <button id="register-button">📝 Đăng Ký</button>
+        <button id="logout-button" style="display: none;">🚪 Đăng Xuất</button>
+    </div>
+    <hr>
     <div class="chat-container">
         <div class="chat-box" id="chat-box"></div>
-        <input type="text" id="user-input" placeholder="Nhập tin nhắn...">
-        <button onclick="sendMessage()">Gửi</button>
+
+        <!-- Thanh công cụ -->
+        <div class="input-container">
+            <input type="text" id="user-input" placeholder="Nhập tin nhắn...">
+            <button id="send-button">Gửi</button>
+            <button id="reset-button">🔄</button>
+            <button id="mic-button">🎤</button>
+            <button id="save-history" title="Lưu lịch sử">💾</button>
+    
+        </div>
     </div>
 
+    <!-- Load thư viện Socket.IO -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
-    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    
+
+    <!-- Load script chính -->
+    <script type="module" src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
